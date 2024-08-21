@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact us!</title>
+</head>
+
+<body class="changebackg">
+    <h1 id="title-contact">Contact us!</h1>
+    <div class="bigcontainer">
+        <div class="photo-p-container">
+            <h1>hola</h1>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos consectetur vel porro error numquam in
+            repellat dignissimos voluptas voluptatum, maxime cum obcaecati quasi repellendus modi? Ratione deserunt
+            distinctio vel dolorum.
+        </div>
+        <div class="form-container">
+            <form action="/submit-form" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tel">Phone Number:</label>
+                    <input type="tel" id="tel" name="tel" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="quest">Please enter your suggestion/question:</label>
+                    <textarea id="quest" name="quest" maxlength="255"></textarea required>
+                </div>
+
+                <div class="form-group">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" required>
+                        Allow your notifications to recibe important information
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
