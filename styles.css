@@ -6,7 +6,7 @@ body {
 /*HEADER*/
 
 header {
-    background-color: rgb(180, 225, 239);
+    background-color: rgb(203, 223, 226);
 }
 
 header h1 {
@@ -31,37 +31,30 @@ header h1 {
 
 /* MAIN NAVIGATION */
 .main-nav {
-    margin-left: auto;
     display: flex;
+    flex-direction: row;
     align-items: center;
+    margin-left: auto;
     padding: 10px;
 }
 
-
-.main-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.main-nav ul li {
+.nav-item {
     margin-left: 20px;
     border-radius: 8px;
     background-color: rgb(140, 196, 209);
     padding: 5px 10px;
 }
 
-
-.main-nav ul li a {
+.nav-item a {
     text-decoration: none;
     color: #000;
     font-weight: bold;
 }
 
-.main-nav ul li a:hover {
+.nav-item a:hover {
     color: #555;
 }
+
 
 /*ELEMENTS IN ROW */
 .elements-flexrow {
@@ -89,7 +82,7 @@ header h1 {
     /*ASIDE ----------------------------------------*/
     grid-column: 1 / 3;
     grid-row: 1 / 7;
-    background-color: rgb(216, 245, 247);
+    background-color: rgb(238, 244, 244);
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -98,7 +91,7 @@ header h1 {
 }
 
 .tip-box {
-    background-color: rgb(140, 196, 209);
+    background-color: rgb(218, 235, 237);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -127,7 +120,7 @@ header h1 {
     /*SECTION 1 ------------------------------*/
     grid-column: 3 / 11;
     grid-row: 1;
-    border: 3px solid #7eb3bd;
+    border: 1px solid #7eb3bd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +193,7 @@ header h1 {
 .item-5,
 .item-6 {
     background-color: rgb(228, 231, 231);
-    border: 2px solid #c6c6c6;
+    border: 1px solid #c6c6c6;
 }
 
 .item-4 {
@@ -352,42 +345,65 @@ header h1 {
 
 /*FORM PAGE-------------------------------------------------- */
 
-.changebackg{
-    background-color:rgb(232, 245, 249);
+.changebackg {
+    background-color: rgb(203, 223, 226);
 }
 
-#title-contact{
-    display: flex;
-    justify-content: center;
+#title-contact {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3pc;
+    margin: 10px;
 }
 
 /* Estilos para el contenedor principal */
 .bigcontainer {
     display: flex;
     flex-direction: row;
-    gap: 20px; 
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
 }
 
 /* Estilos para el contenedor de texto y fotos */
 .photo-p-container {
-    background-color:rgb(217, 233, 237);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgb(22, 68, 78);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 40%;
+    height: auto;
 }
 
-.photo-p-container h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.collage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.collage img {
+    width: 170px;
+    height: 170px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.collage img:hover {
+    transform: scale(1.1);
 }
 
 .photo-p-container p {
-    line-height: 1.6;
+    background-color: rgb(217, 233, 237);
+    box-shadow: 0 4px 8px rgb(22, 68, 78);
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    margin: 20px;
+    text-align: center;
 }
 
 /* Estilos para el contenedor del formulario */
@@ -396,7 +412,7 @@ header h1 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 50%;
+    height: fit-content;
 }
 
 .form-group {
@@ -441,7 +457,7 @@ header h1 {
 
 /*FOOTER ----------------------------------------------------*/
 footer {
-    background-color: rgb(180, 225, 239);
+    background-color: rgb(203, 223, 226);
     display: block;
     text-align: center;
     padding: 7px;
