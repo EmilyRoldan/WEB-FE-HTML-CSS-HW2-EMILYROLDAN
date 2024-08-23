@@ -362,14 +362,9 @@ header h1 {
 .container-icon-title {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start; 
     gap: 20px;
     margin: 20px; 
-}
-
-.back-style {
-    display: flex;
-    align-items: flex-start;
 }
 
 .back-style img {
@@ -384,11 +379,12 @@ header h1 {
     transform: scale(1.1); 
 }
 
-
 #title-contact {
     font-weight: 600;
     font-size: 3pc;
     margin: 0;
+    width: 80%;
+    text-align: center;
 }
 
 /* Estilos para el contenedor principal */
@@ -401,7 +397,7 @@ header h1 {
 }
 
 /* Estilos para el contenedor de texto y fotos */
-.photo-p-container {
+.gif-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -413,31 +409,65 @@ header h1 {
 
 }
 
-.collage {
+.gif-container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-top: 10px;
-
 }
 
-.collage img {
+.gif-container .gif {
     width: 195px;
     height: 150px;
     border-radius: 10px;
+    transition: opacity 1s ease;
+}
+
+.gif-container:hover .gif {
+    opacity: 0;
+}
+
+.gif-container .overlay-image {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    width: 420px;
+    height: 320px;
+    border-radius: 10px;
+    margin: 0;
+    
+}
+
+.gif-container:hover .overlay-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
 }
 
 
-.photo-p-container p {
+.text-container {
+    width: 420px;
+}
+.text-container p, .text-container h3 {
     font-family: "Itim";
     color: #143f47;
-    font-weight: 300;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
     text-align: center;
 }
+
+.text-container h3{
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.photo-p-container p{
+    margin-bottom: 20px;
+    margin-top: 4px;
+    text-align: center;
+}
+
 
 /* Estilos para el contenedor del formulario */
 .form-container {
