@@ -387,7 +387,7 @@ header h1 {
     text-align: center;
 }
 
-/* Estilos para el contenedor principal */
+/*MAIN CONTAINER  */
 .bigcontainer {
     display: flex;
     flex-direction: row;
@@ -396,7 +396,7 @@ header h1 {
     padding: 20px;
 }
 
-/* Estilos para el contenedor de texto y fotos */
+/* CONTAINER - GIFS-TEXT */
 .gif-text-container {
     display: flex;
     flex-direction: column;
@@ -405,7 +405,7 @@ header h1 {
     width: 40%;
     background-color: #e7eff1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 15px;
 
 }
 
@@ -469,7 +469,7 @@ header h1 {
 }
 
 
-/* Estilos para el contenedor del formulario */
+/* CONTAINER - FORM */
 .form-container {
     width: 40%;
     padding: 20px;
